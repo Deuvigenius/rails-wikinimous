@@ -1,0 +1,14 @@
+<div class="container">
+  <%= form_with model: @article do |f| %>
+    <div class="mb-3">
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+    <div class="mb-3">
+      <%= f.label :content %>
+      <%= f.text_field :content %>
+    </div>
+    <input type="submit" name="commit" value="Create Article" class="btn btn-primary" data-disable-with="Create Article">
+  <% end %>
+
+</div>

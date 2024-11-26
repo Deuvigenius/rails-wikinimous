@@ -1,0 +1,12 @@
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/articles">Wikinimous</a>
+    <a class="btn btn-primary" href="/articles/new">New Article</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>Edit <%= @article.title %></h1>
+
+  <%= render "form", article: @article %>
+</div>

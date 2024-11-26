@@ -1,0 +1,15 @@
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/articles">Wikinimous</a>
+    <a class="btn btn-primary" href="/articles/new">New Article</a>
+  </div>
+</nav>
+
+<div class="container">
+  <% @articles.each do |article|%>
+    <h2><%= link_to article.title, article_path(article) %></h2>
+    <p><%= article.content %></p>
+  <% end %>
+</div>
+
+
